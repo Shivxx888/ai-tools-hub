@@ -3,61 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About AI Tools Hub - Learn about our mission and vision">
+    <meta name="description" content="About AI Tools Hub - Learn about our mission, vision, and the creator behind the platform.">
+    <meta name="keywords" content="About, AI Tools Hub, Shivam Kumar Verma, Mission, Vision">
+    <meta property="og:title" content="About AI Tools Hub">
+    <meta property="og:description" content="Learn about our mission to help you discover the best AI tools">
+    <meta property="og:type" content="website">
     <title>About - AI Tools Hub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">⚡ AI Tools Hub</div>
-            <div class="nav-menu">
+            <div class="logo" onclick="window.location.href='index.html'" style="cursor: pointer;">⚡ AI Tools Hub</div>
+            <div class="nav-menu" id="navMenu">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="index.html#tools" class="nav-link">Tools</a>
+                <a href="index.html#categories" class="nav-link">Categories</a>
                 <a href="blog.html" class="nav-link">Blog</a>
                 <a href="about.html" class="nav-link active">About</a>
                 <a href="contact.html" class="nav-link">Contact</a>
+                <a href="privacy.html" class="nav-link">Privacy</a>
+                <a href="terms.html" class="nav-link">Terms</a>
+                <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">🌙</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
 
     <section class="hero" style="padding: 80px 20px;">
-        <h1 style="font-size: 50px; margin-bottom: 20px;">About AI Tools Hub</h1>
-        <p style="font-size: 18px; color: #cbd5e1; max-width: 600px; margin: 0 auto;">Connecting creators with the best AI tools available</p>
+        <h1 style="font-size: 50px; margin-bottom: 20px; background: linear-gradient(135deg, var(--primary-color) 0%, #0ea5e9 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">About AI Tools Hub</h1>
+        <p style="font-size: 18px; color: var(--text-secondary); max-width: 600px; margin: 0 auto;">Connecting creators with the best AI tools available</p>
     </section>
 
-    <section style="padding: 60px 20px; background: #0f172a;">
+    <section style="padding: 60px 20px; background: var(--dark-bg);">
         <div class="container">
             <div style="max-width: 800px; margin: 0 auto;">
-                <h2 style="color: #38bdf8; font-size: 35px; margin-bottom: 30px;">Our Mission</h2>
-                <p style="color: #cbd5e1; margin-bottom: 20px; line-height: 1.8; font-size: 16px;">
-                    AI Tools Hub is dedicated to helping individuals and businesses discover, learn about, and effectively use the best AI tools available today. We believe that AI is transforming every industry and everyone should have access to the tools they need to succeed.
+                <h2 style="color: var(--primary-color); font-size: 35px; margin-bottom: 30px;">Our Mission</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 20px; line-height: 1.8; font-size: 16px;">
+                    AI Tools Hub is dedicated to helping individuals and businesses discover, learn about, and effectively use the best AI tools available today. We believe that AI is transforming every industry, and our mission is to make these powerful tools accessible to everyone.
                 </p>
-                <p style="color: #cbd5e1; margin-bottom: 30px; line-height: 1.8; font-size: 16px;">
-                    Our curated directory features the most popular and effective AI tools for writing, coding, image generation, video creation, design, and productivity. Whether you're a professional, entrepreneur, or student, we have the perfect tool for your needs.
+                <p style="color: var(--text-secondary); margin-bottom: 30px; line-height: 1.8; font-size: 16px;">
+                    Our curated directory features the most popular and effective AI tools for writing, coding, image generation, video creation, design, and productivity. Whether you're a professional seeking to boost your workflow or a learner exploring AI capabilities, we're here to guide you.
                 </p>
 
-                <h3 style="color: #38bdf8; font-size: 25px; margin-top: 40px; margin-bottom: 20px;">Why Choose Us?</h3>
-                <ul style="color: #cbd5e1; margin-bottom: 30px; line-height: 1.8;">
+                <h3 style="color: var(--primary-color); font-size: 25px; margin-top: 40px; margin-bottom: 20px;">Why Choose Us?</h3>
+                <ul style="color: var(--text-secondary); margin-bottom: 30px; line-height: 1.8;">
                     <li>✓ Curated collection of premium AI tools</li>
-                    <li>✓ Detailed reviews and ratings</li>
+                    <li>✓ Detailed reviews and honest ratings</li>
                     <li>✓ Regular updates on new tools and features</li>
                     <li>✓ Expert tips and tutorials</li>
                     <li>✓ Active community and support</li>
+                    <li>✓ Free access to all content</li>
                 </ul>
 
-                <h3 style="color: #38bdf8; font-size: 25px; margin-top: 40px; margin-bottom: 20px;">Contact Us</h3>
-                <p style="color: #cbd5e1; line-height: 1.8;">Have questions or suggestions? We'd love to hear from you! <a href="contact.html" style="color: #38bdf8; text-decoration: none; font-weight: 600;">Get in touch</a></p>
+                <h3 style="color: var(--primary-color); font-size: 25px; margin-top: 40px; margin-bottom: 20px;">About the Creator</h3>
+                <div style="background: rgba(56, 189, 248, 0.1); padding: 25px; border-radius: 12px; border: 1px solid rgba(56, 189, 248, 0.2); margin-bottom: 30px;">
+                    <h4 style="color: var(--primary-color); font-size: 20px; margin-bottom: 10px;">Shivam Kumar Verma</h4>
+                    <p style="color: var(--text-secondary); margin-bottom: 10px;">Passionate about AI and technology, Shivam created AI Tools Hub to empower millions to leverage artificial intelligence in their work and studies.</p>
+                    <p style="color: var(--text-secondary);">📧 Email: <a href="mailto:shivxx888@gmail.com" style="color: var(--primary-color); text-decoration: none;">shivxx888@gmail.com</a></p>
+                </div>
+
+                <h3 style="color: var(--primary-color); font-size: 25px; margin-top: 40px; margin-bottom: 20px;">Contact Us</h3>
+                <p style="color: var(--text-secondary); line-height: 1.8;">Have questions or suggestions? We'd love to hear from you! <a href="contact.html" style="color: var(--primary-color); text-decoration: none; font-weight: 600;">Get in touch with us here</a></p>
             </div>
         </div>
     </section>
 
     <footer class="footer">
         <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>AI Tools Hub</h4>
+                    <p>Your ultimate directory for discovering premium AI tools and applications.</p>
+                    <div class="social-links">
+                        <a href="#" title="Twitter">𝕏</a>
+                        <a href="#" title="Facebook">f</a>
+                        <a href="#" title="LinkedIn">in</a>
+                        <a href="https://github.com/Shivxx888" target="_blank" title="GitHub">⚙️</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#tools">All Tools</a></li>
+                        <li><a href="index.html#categories">Categories</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="sitemap.xml">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>👨‍💼 Shivam Kumar Verma</p>
+                    <p>📧 <a href="mailto:shivxx888@gmail.com" style="color: var(--primary-color);">shivxx888@gmail.com</a></p>
+                    <p>🌐 AI Tools Hub</p>
+                </div>
+            </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 AI Tools Hub. All rights reserved.</p>
+                <p>&copy; 2026 AI Tools Hub. All rights reserved. | Created by <strong>Shivam Kumar Verma</strong> | <a href="privacy.html">Privacy</a> | <a href="terms.html">Terms</a></p>
             </div>
         </div>
     </footer>
+
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()" title="Back to Top">↑</button>
+
+    <script src="script.js"></script>
 </body>
 </html>

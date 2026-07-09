@@ -1,4 +1,4 @@
-// AI Tools Database
+// AI Tools Database with complete information
 const aiTools = [
     // Writing & Content
     {
@@ -8,7 +8,8 @@ const aiTools = [
         description: 'Advanced AI assistant for writing, coding, research and learning. Perfect for content creation and productivity.',
         icon: '🤖',
         rating: 4.9,
-        tags: 'Writing, Coding, Research'
+        tags: 'Writing, Coding, Research',
+        page: 'tools/chatgpt.html'
     },
     {
         id: 2,
@@ -17,7 +18,8 @@ const aiTools = [
         description: 'AI writing assistant designed for marketing and brand voice. Create unique, engaging content effortlessly.',
         icon: '✍️',
         rating: 4.7,
-        tags: 'Writing, Marketing'
+        tags: 'Writing, Marketing',
+        page: 'tools/jasper.html'
     },
     {
         id: 3,
@@ -26,7 +28,8 @@ const aiTools = [
         description: 'Generate high-quality copy for ads, emails, and landing pages using AI technology.',
         icon: '📝',
         rating: 4.6,
-        tags: 'Copywriting, Marketing'
+        tags: 'Copywriting, Marketing',
+        page: 'tools/copyai.html'
     },
     {
         id: 4,
@@ -35,7 +38,8 @@ const aiTools = [
         description: 'Advanced grammar checker and writing assistant for perfect prose every time.',
         icon: '✏️',
         rating: 4.8,
-        tags: 'Writing, Grammar'
+        tags: 'Writing, Grammar',
+        page: 'tools/grammarly.html'
     },
 
     // Coding & Development
@@ -46,7 +50,8 @@ const aiTools = [
         description: 'AI pair programmer that helps you write code faster and with less effort.',
         icon: '⚙️',
         rating: 4.8,
-        tags: 'Coding, Development'
+        tags: 'Coding, Development',
+        page: 'tools/github-copilot.html'
     },
     {
         id: 6,
@@ -55,7 +60,8 @@ const aiTools = [
         description: 'Advanced AI perfect for long documents, detailed analysis and complex coding tasks.',
         icon: '🧠',
         rating: 4.8,
-        tags: 'Coding, Analysis'
+        tags: 'Coding, Analysis',
+        page: 'tools/claude.html'
     },
     {
         id: 7,
@@ -64,7 +70,8 @@ const aiTools = [
         description: 'AI code completion tool that learns your coding patterns and boosts productivity.',
         icon: '💻',
         rating: 4.7,
-        tags: 'Coding, IDE'
+        tags: 'Coding, IDE',
+        page: 'tools/tabnine.html'
     },
     {
         id: 8,
@@ -73,7 +80,8 @@ const aiTools = [
         description: 'ML-powered code generator for faster, more secure development.',
         icon: '🔧',
         rating: 4.6,
-        tags: 'Coding, AWS'
+        tags: 'Coding, AWS',
+        page: 'tools/codewhisperer.html'
     },
 
     // Image Generation
@@ -84,7 +92,8 @@ const aiTools = [
         description: 'Create stunning AI-generated images and artwork from text descriptions.',
         icon: '🎨',
         rating: 4.8,
-        tags: 'Images, Art'
+        tags: 'Images, Art',
+        page: 'tools/midjourney.html'
     },
     {
         id: 10,
@@ -93,7 +102,8 @@ const aiTools = [
         description: 'OpenAI\'s advanced image generation from detailed text prompts.',
         icon: '🖼️',
         rating: 4.9,
-        tags: 'Images, Design'
+        tags: 'Images, Design',
+        page: 'tools/dalle.html'
     },
     {
         id: 11,
@@ -102,7 +112,8 @@ const aiTools = [
         description: 'Open-source AI image generation with customizable models and unlimited potential.',
         icon: '🌈',
         rating: 4.7,
-        tags: 'Images, Open Source'
+        tags: 'Images, Open Source',
+        page: 'tools/stable-diffusion.html'
     },
     {
         id: 12,
@@ -111,7 +122,8 @@ const aiTools = [
         description: 'Generative AI features integrated into Adobe Creative Suite.',
         icon: '🎭',
         rating: 4.6,
-        tags: 'Images, Design'
+        tags: 'Images, Design',
+        page: 'tools/adobe-firefly.html'
     },
 
     // Video Creation
@@ -122,7 +134,8 @@ const aiTools = [
         description: 'Create AI-powered videos with virtual avatars and text-to-speech.',
         icon: '🎬',
         rating: 4.7,
-        tags: 'Video, Avatars'
+        tags: 'Video, Avatars',
+        page: 'tools/synthesia.html'
     },
     {
         id: 14,
@@ -131,7 +144,8 @@ const aiTools = [
         description: 'Convert long-form content into short, engaging AI videos automatically.',
         icon: '📹',
         rating: 4.6,
-        tags: 'Video, Content'
+        tags: 'Video, Content',
+        page: 'tools/pictory.html'
     },
     {
         id: 15,
@@ -140,7 +154,8 @@ const aiTools = [
         description: 'AI video editing and generation platform for creators and professionals.',
         icon: '🎥',
         rating: 4.7,
-        tags: 'Video, Editing'
+        tags: 'Video, Editing',
+        page: 'tools/runway.html'
     },
     {
         id: 16,
@@ -149,7 +164,8 @@ const aiTools = [
         description: 'Generate personalized videos with AI avatars in minutes.',
         icon: '🤳',
         rating: 4.6,
-        tags: 'Video, Marketing'
+        tags: 'Video, Marketing',
+        page: 'tools/heygen.html'
     },
 
     // Productivity
@@ -160,7 +176,8 @@ const aiTools = [
         description: 'AI-powered workspace for notes, databases, and team collaboration.',
         icon: '📊',
         rating: 4.8,
-        tags: 'Productivity, Notes'
+        tags: 'Productivity, Notes',
+        page: 'tools/notion-ai.html'
     },
     {
         id: 18,
@@ -169,7 +186,8 @@ const aiTools = [
         description: 'Intelligent RPA platform for business process automation.',
         icon: '⚡',
         rating: 4.7,
-        tags: 'Automation, RPA'
+        tags: 'Automation, RPA',
+        page: 'tools/automation-anywhere.html'
     },
     {
         id: 19,
@@ -178,7 +196,8 @@ const aiTools = [
         description: 'AI assistant integrated into Microsoft 365 applications.',
         icon: '🪟',
         rating: 4.7,
-        tags: 'Productivity, Microsoft'
+        tags: 'Productivity, Microsoft',
+        page: 'tools/microsoft-copilot.html'
     },
     {
         id: 20,
@@ -187,7 +206,8 @@ const aiTools = [
         description: 'AI meeting assistant for transcription and note-taking.',
         icon: '🎙️',
         rating: 4.6,
-        tags: 'Productivity, Meeting'
+        tags: 'Productivity, Meeting',
+        page: 'tools/otter.html'
     },
 
     // Design
@@ -198,7 +218,8 @@ const aiTools = [
         description: 'Design anything with drag-and-drop simplicity powered by AI.',
         icon: '🎨',
         rating: 4.8,
-        tags: 'Design, Graphics'
+        tags: 'Design, Graphics',
+        page: 'tools/canva.html'
     },
     {
         id: 22,
@@ -207,7 +228,8 @@ const aiTools = [
         description: 'AI-powered content-aware fill for professional designers.',
         icon: '🖌️',
         rating: 4.9,
-        tags: 'Design, Adobe'
+        tags: 'Design, Adobe',
+        page: 'tools/adobe-generative-fill.html'
     },
     {
         id: 23,
@@ -216,7 +238,8 @@ const aiTools = [
         description: 'Collaborative design platform with AI-assisted design features.',
         icon: '📐',
         rating: 4.7,
-        tags: 'Design, Collaboration'
+        tags: 'Design, Collaboration',
+        page: 'tools/figma-ai.html'
     },
     {
         id: 24,
@@ -225,7 +248,8 @@ const aiTools = [
         description: 'AI-powered background removal for images instantly.',
         icon: '✨',
         rating: 4.8,
-        tags: 'Images, Editing'
+        tags: 'Images, Editing',
+        page: 'tools/removebg.html'
     }
 ];
 
@@ -233,11 +257,24 @@ const aiTools = [
 document.addEventListener('DOMContentLoaded', function() {
     renderTools(aiTools);
     setupEventListeners();
+    loadTheme();
+    loadNewsletterData();
 });
 
-// Render Tools
+// Render Tools with proper links
 function renderTools(tools) {
     const toolsGrid = document.getElementById('toolsGrid');
+    const noResultsMessage = document.getElementById('noResultsMessage');
+    
+    if (!toolsGrid) return;
+    
+    if (tools.length === 0) {
+        toolsGrid.innerHTML = '';
+        if (noResultsMessage) noResultsMessage.style.display = 'block';
+        return;
+    }
+    
+    if (noResultsMessage) noResultsMessage.style.display = 'none';
     toolsGrid.innerHTML = '';
     
     tools.forEach(tool => {
@@ -249,53 +286,85 @@ function renderTools(tools) {
             <div class="category-tag">${tool.category.charAt(0).toUpperCase() + tool.category.slice(1)}</div>
             <p>${tool.description}</p>
             <p class="tool-rating">⭐ ${tool.rating}/5</p>
-            <a href="#" class="tool-button">Learn More</a>
+            <a href="${tool.page}" class="tool-button" onclick="return confirmNavigation(event, '${tool.page}')">Learn More</a>
         `;
+        toolCard.onclick = () => window.location.href = tool.page;
+        toolCard.style.cursor = 'pointer';
         toolsGrid.appendChild(toolCard);
+    });
+}
+
+// Navigation confirmation
+function confirmNavigation(event, url) {
+    event.stopPropagation();
+    window.location.href = url;
+    return false;
+}
+
+// Real-time search with debounce
+let searchTimeout;
+function setupRealTimeSearch() {
+    const searchInput = document.getElementById('searchInput');
+    if (!searchInput) return;
+    
+    searchInput.addEventListener('input', function() {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(() => {
+            searchTools();
+        }, 300);
     });
 }
 
 // Filter Tools by Category
 function filterTools(category) {
     const filtered = aiTools.filter(tool => tool.category === category);
-    if (filtered.length > 0) {
-        renderTools(filtered);
-        document.getElementById('tools').scrollIntoView({ behavior: 'smooth' });
-    }
+    renderTools(filtered);
+    scrollToElement('tools');
 }
 
-// Search Tools
+// Search Tools - Real-time
 function searchTools() {
-    const searchInput = document.getElementById('searchInput').value.toLowerCase();
-    if (searchInput.trim() === '') {
+    const searchInput = document.getElementById('searchInput');
+    if (!searchInput) return;
+    
+    const searchValue = searchInput.value.toLowerCase();
+    
+    if (searchValue.trim() === '') {
         renderTools(aiTools);
         return;
     }
     
     const filtered = aiTools.filter(tool => 
-        tool.name.toLowerCase().includes(searchInput) ||
-        tool.description.toLowerCase().includes(searchInput) ||
-        tool.tags.toLowerCase().includes(searchInput)
+        tool.name.toLowerCase().includes(searchValue) ||
+        tool.category.toLowerCase().includes(searchValue) ||
+        tool.description.toLowerCase().includes(searchValue) ||
+        tool.tags.toLowerCase().includes(searchValue)
     );
     
     renderTools(filtered);
-    document.getElementById('tools').scrollIntoView({ behavior: 'smooth' });
 }
 
 // Setup Event Listeners
 function setupEventListeners() {
+    // Real-time search
+    setupRealTimeSearch();
+    
     // Search input on Enter key
-    document.getElementById('searchInput').addEventListener('keypress', function(event) {
-        if (event.key === 'Enter') {
-            searchTools();
-        }
-    });
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+        searchInput.addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                searchTools();
+            }
+        });
+    }
 
     // Mobile menu toggle
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('navMenu');
     
-    if (hamburger) {
+    if (hamburger && navMenu) {
         hamburger.addEventListener('click', function() {
             navMenu.classList.toggle('active');
         });
@@ -305,17 +374,27 @@ function setupEventListeners() {
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
-            navMenu.classList.remove('active');
+            if (navMenu && navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+            }
         });
     });
 
     // Back to top button
     window.addEventListener('scroll', showBackToTop);
+    
+    // Theme toggle
+    const themeToggle = document.getElementById('themeToggle');
+    if (themeToggle) {
+        themeToggle.addEventListener('click', toggleTheme);
+    }
 }
 
 // Show Back to Top Button
 function showBackToTop() {
     const backToTopBtn = document.getElementById('backToTop');
+    if (!backToTopBtn) return;
+    
     if (window.pageYOffset > 300) {
         backToTopBtn.classList.add('show');
     } else {
@@ -331,6 +410,14 @@ function scrollToTop() {
     });
 }
 
+// Scroll to Element
+function scrollToElement(elementId) {
+    const element = document.getElementById(elementId);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
 // Set Active Navigation Link
 function setActive(element) {
     const navLinks = document.querySelectorAll('.nav-link');
@@ -338,24 +425,39 @@ function setActive(element) {
     element.classList.add('active');
 }
 
-// Newsletter Subscription
+// Newsletter Subscription with Local Storage
 function subscribeNewsletter(event) {
     event.preventDefault();
-    const email = document.getElementById('emailInput').value;
+    const email = document.getElementById('emailInput');
+    if (!email) return;
     
-    if (email.trim() === '') {
-        alert('Please enter your email address');
+    const emailValue = email.value;
+    
+    if (emailValue.trim() === '') {
+        showNotification('Please enter your email address', 'error');
         return;
     }
     
-    if (!isValidEmail(email)) {
-        alert('Please enter a valid email address');
+    if (!isValidEmail(emailValue)) {
+        showNotification('Please enter a valid email address', 'error');
         return;
     }
     
-    // Success message
-    alert('Thank you for subscribing! Check your email for confirmation.');
-    document.getElementById('emailInput').value = '';
+    // Save to local storage
+    const subscribers = JSON.parse(localStorage.getItem('subscribers')) || [];
+    if (!subscribers.includes(emailValue)) {
+        subscribers.push(emailValue);
+        localStorage.setItem('subscribers', JSON.stringify(subscribers));
+    }
+    
+    showNotification('Thank you for subscribing! Check your email for confirmation.', 'success');
+    email.value = '';
+}
+
+// Load Newsletter Data
+function loadNewsletterData() {
+    const subscribers = JSON.parse(localStorage.getItem('subscribers')) || [];
+    console.log('Current subscribers:', subscribers);
 }
 
 // Email Validation
@@ -364,6 +466,58 @@ function isValidEmail(email) {
     return emailRegex.test(email);
 }
 
+// Show Notification
+function showNotification(message, type = 'success') {
+    const notification = document.createElement('div');
+    notification.className = `notification ${type}`;
+    notification.textContent = message;
+    notification.style.cssText = `
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 15px 25px;
+        border-radius: 8px;
+        z-index: 2000;
+        animation: slideInRight 0.3s ease-out;
+        max-width: 300px;
+        background: ${type === 'success' ? 'linear-gradient(135deg, #10b981 0%, #059669 100%)' : 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)'};
+        color: white;
+        font-weight: 600;
+    `;
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+        notification.style.animation = 'slideOutRight 0.3s ease-out';
+        setTimeout(() => notification.remove(), 300);
+    }, 3000);
+}
+
+// Dark/Light Mode Toggle
+function toggleTheme() {
+    const html = document.documentElement;
+    const currentTheme = html.getAttribute('data-theme') || 'dark';
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    
+    const themeToggle = document.getElementById('themeToggle');
+    if (themeToggle) {
+        themeToggle.textContent = newTheme === 'dark' ? '🌙' : '☀️';
+    }
+}
+
+// Load Theme Preference
+function loadTheme() {
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    
+    const themeToggle = document.getElementById('themeToggle');
+    if (themeToggle) {
+        themeToggle.textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+    }
+}
+
 // Console Message
 console.log('%c🚀 AI Tools Hub Loaded Successfully!', 'color: #38bdf8; font-size: 16px; font-weight: bold;');
-console.log('%cVisit our resources for more info', 'color: #38bdf8; font-weight: bold;');
+console.log('%c✨ Premium AI Tools Directory - Production Ready', 'color: #38bdf8; font-weight: bold;');
