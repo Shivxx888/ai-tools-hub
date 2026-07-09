@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover the best AI tools for writing, coding, images, videos, and productivity. Your ultimate directory of premium AI applications.">
-    <meta name="keywords" content="AI tools, ChatGPT, Midjourney, AI directory, productivity tools">
-    <meta name="author" content="AI Tools Hub">
+    <meta name="description" content="Discover the best AI tools for writing, coding, images, videos, and productivity. Your ultimate directory of premium AI applications. ChatGPT, Midjourney, Claude, Gemini, and more.">
+    <meta name="keywords" content="AI tools, ChatGPT, Midjourney, Claude, Gemini, AI directory, productivity tools, image generation, video creation">
+    <meta name="author" content="Shivam Kumar Verma">
     <meta property="og:title" content="AI Tools Hub - Premium AI Directory">
-    <meta property="og:description" content="Discover the best AI tools for your needs">
+    <meta property="og:description" content="Discover and explore the best AI tools for your needs. Complete directory with reviews, ratings, and comparisons.">
     <meta property="og:type" content="website">
-    <meta name="robots" content="index, follow">
+    <meta property="og:url" content="https://ai-tools-hub.com">
+    <meta property="og:image" content="https://ai-tools-hub.com/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI Tools Hub - Premium AI Directory">
+    <meta name="twitter:description" content="Discover and explore the best AI tools for your needs">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="language" content="English">
+    <link rel="canonical" href="https://ai-tools-hub.com/">
     <title>AI Tools Hub - Discover Premium AI Tools & Applications</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='32' fill='%2338bdf8'>⚡</text></svg>">
@@ -24,6 +30,11 @@
         "name": "AI Tools Hub",
         "description": "Premium directory of AI tools and applications",
         "url": "https://ai-tools-hub.com",
+        "creator": {
+            "@type": "Person",
+            "name": "Shivam Kumar Verma",
+            "email": "shivxx888@gmail.com"
+        },
         "potentialAction": {
             "@type": "SearchAction",
             "target": "https://ai-tools-hub.com?search={search_term_string}",
@@ -36,16 +47,17 @@
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">⚡ AI Tools Hub</div>
+            <div class="logo" onclick="scrollToElement('home')">⚡ AI Tools Hub</div>
             <div class="nav-menu" id="navMenu">
-                <a href="#home" class="nav-link active" onclick="setActive(this)">Home</a>
-                <a href="#tools" class="nav-link" onclick="setActive(this)">Tools</a>
-                <a href="#categories" class="nav-link" onclick="setActive(this)">Categories</a>
-                <a href="#trending" class="nav-link" onclick="setActive(this)">Trending</a>
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="#tools" class="nav-link">Tools</a>
+                <a href="#categories" class="nav-link">Categories</a>
                 <a href="blog.html" class="nav-link">Blog</a>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="contact.html" class="nav-link">Contact</a>
                 <a href="privacy.html" class="nav-link">Privacy</a>
+                <a href="terms.html" class="nav-link">Terms</a>
+                <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">🌙</button>
             </div>
             <div class="hamburger" id="hamburger">
                 <span></span>
@@ -61,12 +73,15 @@
             <h1>Discover The Best AI Tools</h1>
             <p>Find powerful AI tools for writing, coding, images, videos, design, and productivity. Your ultimate directory of premium AI applications.</p>
             <div class="search-container">
-                <input type="text" id="searchInput" class="search-bar" placeholder="Search AI tools...">
+                <input type="text" id="searchInput" class="search-bar" placeholder="Search by name, category, or features...">
                 <button class="search-btn" onclick="searchTools()">Search</button>
             </div>
+            <div id="noResultsMessage" class="no-results" style="display: none;">
+                <p>No tools found matching your search. Try different keywords.</p>
+            </div>
             <div class="cta-buttons">
-                <button class="btn btn-primary" onclick="document.getElementById('tools').scrollIntoView({behavior: 'smooth'})">Explore Tools</button>
-                <button class="btn btn-secondary" onclick="document.getElementById('categories').scrollIntoView({behavior: 'smooth'})">Browse Categories</button>
+                <button class="btn btn-primary" onclick="scrollToElement('tools')">Explore Tools</button>
+                <button class="btn btn-secondary" onclick="scrollToElement('categories')">Browse Categories</button>
             </div>
         </div>
     </section>
@@ -107,42 +122,8 @@
                     <p>Graphics & UI Design</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Trending AI Tools -->
-    <section class="trending" id="trending">
-        <div class="container">
-            <h2>🔥 Trending AI Tools</h2>
-            <p class="section-subtitle">Most popular tools this month</p>
-            <div class="trending-grid">
-                <div class="trending-card">
-                    <div class="trend-badge">1st</div>
-                    <div class="tool-icon">🤖</div>
-                    <h3>ChatGPT</h3>
-                    <p class="category-tag">Writing, Coding</p>
-                    <p class="tool-desc">Advanced AI assistant for writing, coding, research and learning.</p>
-                    <div class="rating">⭐ 4.9/5</div>
-                    <a href="#" class="tool-link">Learn More →</a>
-                </div>
-                <div class="trending-card">
-                    <div class="trend-badge">2nd</div>
-                    <div class="tool-icon">🎨</div>
-                    <h3>Midjourney</h3>
-                    <p class="category-tag">Images, Design</p>
-                    <p class="tool-desc">Create stunning AI-generated images with exceptional quality.</p>
-                    <div class="rating">⭐ 4.8/5</div>
-                    <a href="#" class="tool-link">Learn More →</a>
-                </div>
-                <div class="trending-card">
-                    <div class="trend-badge">3rd</div>
-                    <div class="tool-icon">🧠</div>
-                    <h3>Claude</h3>
-                    <p class="category-tag">Writing, Coding</p>
-                    <p class="tool-desc">Perfect for long documents, detailed analysis and coding tasks.</p>
-                    <div class="rating">⭐ 4.8/5</div>
-                    <a href="#" class="tool-link">Learn More →</a>
-                </div>
+            <div style="text-align: center; margin-top: 30px;">
+                <button class="btn btn-secondary" onclick="renderTools(aiTools)">View All Tools</button>
             </div>
         </div>
     </section>
@@ -186,6 +167,9 @@
                     <a href="blog.html" class="read-more">Read More →</a>
                 </article>
             </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="blog.html" class="btn btn-primary">View All Articles</a>
+            </div>
         </div>
     </section>
 
@@ -213,14 +197,14 @@
                         <a href="#" title="Twitter">𝕏</a>
                         <a href="#" title="Facebook">f</a>
                         <a href="#" title="LinkedIn">in</a>
-                        <a href="#" title="GitHub">⚙️</a>
+                        <a href="https://github.com/Shivxx888" target="_blank" title="GitHub">⚙️</a>
                     </div>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#tools">All Tools</a></li>
-                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="index.html#tools">All Tools</a></li>
+                        <li><a href="index.html#categories">Categories</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="about.html">About Us</a></li>
                     </ul>
@@ -230,28 +214,25 @@
                     <ul>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="sitemap.xml">Sitemap</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Popular Tools</h4>
-                    <ul>
-                        <li><a href="#">ChatGPT</a></li>
-                        <li><a href="#">Midjourney</a></li>
-                        <li><a href="#">Claude</a></li>
-                        <li><a href="#">Gemini</a></li>
-                    </ul>
+                    <h4>Contact Info</h4>
+                    <p>👨‍💼 Shivam Kumar Verma</p>
+                    <p>📧 <a href="mailto:shivxx888@gmail.com">shivxx888@gmail.com</a></p>
+                    <p>🌐 AI Tools Hub</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 AI Tools Hub. All rights reserved. | Made with ❤️ by Shivam | <a href="privacy.html">Privacy</a> | <a href="#">Terms</a></p>
+                <p>&copy; 2026 AI Tools Hub. All rights reserved. | Created by <strong>Shivam Kumar Verma</strong> | <a href="privacy.html">Privacy</a> | <a href="terms.html">Terms</a></p>
             </div>
         </div>
     </footer>
 
     <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">↑</button>
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()" title="Back to Top">↑</button>
 
     <script src="script.js"></script>
 </body>
