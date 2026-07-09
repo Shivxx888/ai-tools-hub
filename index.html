@@ -1,195 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Tools Hub</title>
-
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#0f172a;
-color:white;
-}
-
-header{
-padding:20px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:#111827;
-position:sticky;
-top:0;
-}
-
-.logo{
-font-size:28px;
-font-weight:bold;
-color:#38bdf8;
-}
-
-nav a{
-color:white;
-margin-left:15px;
-text-decoration:none;
-}
-
-.hero{
-padding:70px 20px;
-text-align:center;
-}
-
-.hero h1{
-font-size:42px;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:18px;
-color:#cbd5e1;
-margin-bottom:30px;
-}
-
-.search{
-max-width:600px;
-margin:auto;
-display:flex;
-}
-
-.search input{
-flex:1;
-padding:15px;
-border:none;
-border-radius:10px 0 0 10px;
-font-size:18px;
-}
-
-.search button{
-padding:15px 25px;
-background:#38bdf8;
-border:none;
-font-size:18px;
-color:white;
-border-radius:0 10px 10px 0;
-}.hero-btn{
-display:inline-block;
-margin-top:25px;
-padding:15px 30px;
-background:#38bdf8;
-color:white;
-text-decoration:none;
-border-radius:10px;
-font-weight:bold;
-}
-
-.tools{
-padding:60px 20px;
-max-width:1200px;
-margin:auto;
-}
-
-.tools h2{
-text-align:center;
-margin-bottom:40px;
-font-size:35px;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:#1e293b;
-padding:25px;
-border-radius:15px;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.card h3{
-margin-bottom:10px;
-color:#38bdf8;
-}
-
-footer{
-padding:30px;
-text-align:center;
-background:#111827;
-margin-top:60px;
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the best AI tools for writing, coding, images, videos, and productivity. Your ultimate directory of premium AI applications.">
+    <meta name="keywords" content="AI tools, ChatGPT, Midjourney, AI directory, productivity tools">
+    <meta name="author" content="AI Tools Hub">
+    <meta property="og:title" content="AI Tools Hub - Premium AI Directory">
+    <meta property="og:description" content="Discover the best AI tools for your needs">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <title>AI Tools Hub - Discover Premium AI Tools & Applications</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='32' fill='%2338bdf8'>⚡</text></svg>">
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxxxxxxxx"></script>
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "AI Tools Hub",
+        "description": "Premium directory of AI tools and applications",
+        "url": "https://ai-tools-hub.com",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://ai-tools-hub.com?search={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
 </head>
-
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">⚡ AI Tools Hub</div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active" onclick="setActive(this)">Home</a>
+                <a href="#tools" class="nav-link" onclick="setActive(this)">Tools</a>
+                <a href="#categories" class="nav-link" onclick="setActive(this)">Categories</a>
+                <a href="#trending" class="nav-link" onclick="setActive(this)">Trending</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="privacy.html" class="nav-link">Privacy</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-<header>
-<div class="logo">AI Tools Hub</div>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Discover The Best AI Tools</h1>
+            <p>Find powerful AI tools for writing, coding, images, videos, design, and productivity. Your ultimate directory of premium AI applications.</p>
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-bar" placeholder="Search AI tools...">
+                <button class="search-btn" onclick="searchTools()">Search</button>
+            </div>
+            <div class="cta-buttons">
+                <button class="btn btn-primary" onclick="document.getElementById('tools').scrollIntoView({behavior: 'smooth'})">Explore Tools</button>
+                <button class="btn btn-secondary" onclick="document.getElementById('categories').scrollIntoView({behavior: 'smooth'})">Browse Categories</button>
+            </div>
+        </div>
+    </section>
 
-<nav>
-<a href="#">Home</a>
-<a href="#">Tools</a>
-<a href="#">Blog</a>
-<a href="#">Contact</a>
-</nav>
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2>Browse by Category</h2>
+            <div class="category-grid">
+                <div class="category-card" onclick="filterTools('writing')">
+                    <div class="category-icon">✍️</div>
+                    <h3>Writing</h3>
+                    <p>Content & Copy Writing</p>
+                </div>
+                <div class="category-card" onclick="filterTools('coding')">
+                    <div class="category-icon">💻</div>
+                    <h3>Coding</h3>
+                    <p>Programming & Development</p>
+                </div>
+                <div class="category-card" onclick="filterTools('images')">
+                    <div class="category-icon">🎨</div>
+                    <h3>Image Generation</h3>
+                    <p>AI Art & Images</p>
+                </div>
+                <div class="category-card" onclick="filterTools('video')">
+                    <div class="category-icon">🎬</div>
+                    <h3>Video</h3>
+                    <p>Video Creation & Editing</p>
+                </div>
+                <div class="category-card" onclick="filterTools('productivity')">
+                    <div class="category-icon">📊</div>
+                    <h3>Productivity</h3>
+                    <p>Workflow & Automation</p>
+                </div>
+                <div class="category-card" onclick="filterTools('design')">
+                    <div class="category-icon">🖌️</div>
+                    <h3>Design</h3>
+                    <p>Graphics & UI Design</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-</header>
+    <!-- Trending AI Tools -->
+    <section class="trending" id="trending">
+        <div class="container">
+            <h2>🔥 Trending AI Tools</h2>
+            <p class="section-subtitle">Most popular tools this month</p>
+            <div class="trending-grid">
+                <div class="trending-card">
+                    <div class="trend-badge">1st</div>
+                    <div class="tool-icon">🤖</div>
+                    <h3>ChatGPT</h3>
+                    <p class="category-tag">Writing, Coding</p>
+                    <p class="tool-desc">Advanced AI assistant for writing, coding, research and learning.</p>
+                    <div class="rating">⭐ 4.9/5</div>
+                    <a href="#" class="tool-link">Learn More →</a>
+                </div>
+                <div class="trending-card">
+                    <div class="trend-badge">2nd</div>
+                    <div class="tool-icon">🎨</div>
+                    <h3>Midjourney</h3>
+                    <p class="category-tag">Images, Design</p>
+                    <p class="tool-desc">Create stunning AI-generated images with exceptional quality.</p>
+                    <div class="rating">⭐ 4.8/5</div>
+                    <a href="#" class="tool-link">Learn More →</a>
+                </div>
+                <div class="trending-card">
+                    <div class="trend-badge">3rd</div>
+                    <div class="tool-icon">🧠</div>
+                    <h3>Claude</h3>
+                    <p class="category-tag">Writing, Coding</p>
+                    <p class="tool-desc">Perfect for long documents, detailed analysis and coding tasks.</p>
+                    <div class="rating">⭐ 4.8/5</div>
+                    <a href="#" class="tool-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="hero">
+    <!-- All AI Tools Section -->
+    <section class="tools" id="tools">
+        <div class="container">
+            <h2>Complete AI Tools Directory</h2>
+            <p class="section-subtitle">Explore our curated collection of premium AI tools</p>
+            <div class="tools-grid" id="toolsGrid">
+                <!-- Tools loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
 
-<h1>Discover The Best AI Tools</h1>
+    <!-- Blog Section -->
+    <section class="blog">
+        <div class="container">
+            <h2>Latest Blog Posts</h2>
+            <p class="section-subtitle">Stay updated with AI trends and tips</p>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <h3>How to Use ChatGPT for Content Creation</h3>
+                    <p class="blog-date">📅 July 8, 2026</p>
+                    <p>Learn effective techniques to leverage ChatGPT for creating high-quality content that engages your audience.</p>
+                    <a href="blog.html" class="read-more">Read More →</a>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <h3>Top 5 AI Tools for Developers in 2026</h3>
+                    <p class="blog-date">📅 July 7, 2026</p>
+                    <p>Discover the must-have AI tools that are revolutionizing software development and boosting productivity.</p>
+                    <a href="blog.html" class="read-more">Read More →</a>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <h3>AI Image Generation: Complete Guide</h3>
+                    <p class="blog-date">📅 July 6, 2026</p>
+                    <p>Comprehensive guide to creating stunning AI-generated images using the latest tools and techniques.</p>
+                    <a href="blog.html" class="read-more">Read More →</a>
+                </article>
+            </div>
+        </div>
+    </section>
 
-<p>Find powerful AI tools for writing, coding, images, videos and productivity.</p>
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated with AI News</h2>
+            <p>Get weekly updates on new AI tools, trends, and exclusive tips delivered to your inbox.</p>
+            <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                <input type="email" id="emailInput" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+            <p class="newsletter-note">✓ We respect your privacy. No spam, guaranteed.</p>
+        </div>
+    </section>
 
-<a class="hero-btn" href="#">Explore Tools</a>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>AI Tools Hub</h4>
+                    <p>Your ultimate directory for discovering premium AI tools and applications.</p>
+                    <div class="social-links">
+                        <a href="#" title="Twitter">𝕏</a>
+                        <a href="#" title="Facebook">f</a>
+                        <a href="#" title="LinkedIn">in</a>
+                        <a href="#" title="GitHub">⚙️</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#tools">All Tools</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Popular Tools</h4>
+                    <ul>
+                        <li><a href="#">ChatGPT</a></li>
+                        <li><a href="#">Midjourney</a></li>
+                        <li><a href="#">Claude</a></li>
+                        <li><a href="#">Gemini</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AI Tools Hub. All rights reserved. | Made with ❤️ by Shivam | <a href="privacy.html">Privacy</a> | <a href="#">Terms</a></p>
+            </div>
+        </div>
+    </footer>
 
-</section>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">↑</button>
 
-<section class="tools">
-
-<h2>Popular AI Tools</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>ChatGPT</h3>
-<p>AI assistant for writing, coding and learning.</p>
-</div>
-
-<div class="card">
-<h3>Gemini</h3>
-<p>Google AI assistant for research and productivity.</p>
-</div>
-
-<div class="card">
-<h3>Claude</h3>
-<p>Perfect for long documents and coding tasks.</p>
-</div>
-
-<div class="card">
-<h3>Midjourney</h3>
-<p>Create stunning AI generated images.</p>
-</div></div>
-
-</section>
-
-<footer>
-
-<p>© 2026 AI Tools Hub | Built with ❤️ by Shivam</p>
-
-</footer>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
