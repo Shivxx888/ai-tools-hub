@@ -1,14 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /private/
-Disallow: /admin/
 
 Sitemap: https://shivxx888.github.io/ai-tools-hub/sitemap.xml
-
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 0
-
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 1
