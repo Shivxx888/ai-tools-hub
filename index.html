@@ -1,32 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Tools Hub</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Tools Hub</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+header{
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#111827;
+position:sticky;
+top:0;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#38bdf8;
+}
+
+nav a{
+color:white;
+margin-left:15px;
+text-decoration:none;
+}
+
+.hero{
+padding:70px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+color:#cbd5e1;
+margin-bottom:30px;
+}
+
+.search{
+max-width:600px;
+margin:auto;
+display:flex;
+}
+
+.search input{
+flex:1;
+padding:15px;
+border:none;
+border-radius:10px 0 0 10px;
+font-size:18px;
+}
+
+.search button{
+padding:15px 25px;
+background:#38bdf8;
+border:none;
+font-size:18px;
+color:white;
+border-radius:0 10px 10px 0;
+}.hero-btn{
+display:inline-block;
+margin-top:25px;
+padding:15px 30px;
+background:#38bdf8;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+}
+
+.tools{
+padding:60px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.tools h2{
+text-align:center;
+margin-bottom:40px;
+font-size:35px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+margin-bottom:10px;
+color:#38bdf8;
+}
+
+footer{
+padding:30px;
+text-align:center;
+background:#111827;
+margin-top:60px;
+}
+
+</style>
 </head>
+
 <body>
 
 <header>
-  <h1>🤖 AI Tools Hub</h1>
-  <p>Discover the Best AI Tools for Free</p>
-</header>
+<div class="logo">AI Tools Hub</div>
 
 <nav>
-  <a href="#">Home</a>
-  <a href="#">AI Tools</a>
-  <a href="#">Categories</a>
-  <a href="#">Blog</a>
+<a href="#">Home</a>
+<a href="#">Tools</a>
+<a href="#">Blog</a>
+<a href="#">Contact</a>
 </nav>
 
+</header>
+
 <section class="hero">
-  <h2>Find the Perfect AI Tool</h2>
-  <p>Explore AI tools for writing, coding, image generation, video editing and more.</p>
-  <button>Explore Tools</button>
+
+<h1>Discover The Best AI Tools</h1>
+
+<p>Find powerful AI tools for writing, coding, images, videos and productivity.</p>
+
+<a class="hero-btn" href="#">Explore Tools</a>
+
 </section>
 
-<section class="cards">
+<section class="tools">
+
+<h2>Popular AI Tools</h2>
+
+<div class="grid">
 
 <div class="card">
 <h3>ChatGPT</h3>
@@ -35,21 +169,27 @@
 
 <div class="card">
 <h3>Gemini</h3>
-<p>Google AI assistant with multimodal features.</p>
+<p>Google AI assistant for research and productivity.</p>
 </div>
 
 <div class="card">
 <h3>Claude</h3>
-<p>Excellent AI for long documents and coding.</p>
+<p>Perfect for long documents and coding tasks.</p>
 </div>
+
+<div class="card">
+<h3>Midjourney</h3>
+<p>Create stunning AI generated images.</p>
+</div></div>
 
 </section>
 
 <footer>
-<p>© 2026 AI Tools Hub</p>
+
+<p>© 2026 AI Tools Hub | Built with ❤️ by Shivam</p>
+
 </footer>
 
-<script src="script.js"></script>
-
 </body>
+
 </html>
